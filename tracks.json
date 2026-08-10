@@ -1,0 +1,587 @@
+[
+  {
+    "id": "MX7FSAnRPug",
+    "title": "Loser",
+    "artist": "Beck",
+    "album": "Mellow Gold",
+    "duration": 235,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/35/a5/a8/35a5a83a-7a68-2390-c069-6bee759f047a/00075021017924.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Loser"
+  },
+  {
+    "id": "2zPGWGqdfJ8",
+    "title": "Oh Yeah",
+    "artist": "Yello",
+    "album": "Stella (Deluxe Edition)",
+    "duration": 185,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/93/54/12/9354128d-91e8-3bca-36b3-4a1f510c1240/00602557168327.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "oh yeah?"
+  },
+  {
+    "id": "_z4iPWMbdoo",
+    "title": "Jerk It Out",
+    "artist": "Caesars",
+    "album": "39 Minutes of Bliss (In an Otherwise Meaningless World)",
+    "duration": 196,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/36/08/55/36085508-0a77-329e-5d72-f340b9020c58/0724358368659_1401x1401_300dpi.jpg/600x600bb.jpg",
+    "rawTitle": "Jerk It Out"
+  },
+  {
+    "id": "L4FZjlxtNtE",
+    "title": "Gone, Gone, Gone",
+    "artist": "Phillip Phillips",
+    "album": "The World From the Side of the Moon (Deluxe Version)",
+    "duration": 210,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/9a/72/eb/9a72eb50-97ad-9684-8f3b-46587ef81ac2/12UMGIM56926.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Gone, Gone, Gone"
+  },
+  {
+    "id": "SuZytYa71lk",
+    "title": "Ho Hey",
+    "artist": "The Lumineers",
+    "album": "The Lumineers (Deluxe Edition)",
+    "duration": 163,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/34/43/5e/34435ee1-dcee-1c60-f3ab-f53965790f3c/18540.jpg/600x600bb.jpg",
+    "rawTitle": "Ho Hey"
+  },
+  {
+    "id": "ulRXvH8VOl8",
+    "title": "Wake Me Up When September Ends",
+    "artist": "Green Day",
+    "album": "American Idiot (Deluxe Edition)",
+    "duration": 286,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/9e/17/c2/mzi.ofggkufy.jpg/600x600bb.jpg",
+    "rawTitle": "Wake Me up When September Ends"
+  },
+  {
+    "id": "UBUXDUtZZnI",
+    "title": "Sweater Weather",
+    "artist": "The Neighbourhood",
+    "album": "I Love You.",
+    "duration": 240,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/28/71/00/287100fb-5c31-0195-5343-e6b3625886d0/886443969834.jpg/600x600bb.jpg",
+    "rawTitle": "Sweater Weather"
+  },
+  {
+    "id": "K8v_DaCcORQ",
+    "title": "Midnight City",
+    "artist": "M83",
+    "album": "Hurry Up, We're Dreaming",
+    "duration": 241,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cb/7b/a9/cb7ba903-b5f1-cc21-90db-7a81b7aa0997/724596951057.jpg/600x600bb.jpg",
+    "rawTitle": "Midnight City"
+  },
+  {
+    "id": "CfuOpXiNy1Y",
+    "title": "I Wanna Be Your Boyfriend",
+    "artist": "Hot Freaks",
+    "album": "Hot Freaks",
+    "duration": 157,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/84/ff/fc/84fffc69-dc74-2222-8021-42d8c5042e77/198002201539.png/600x600bb.jpg",
+    "rawTitle": "I Wanna Be Your Boyfriend (2016 Remaster)"
+  },
+  {
+    "id": "90DKXLbzLto",
+    "title": "The Night We Met",
+    "artist": "Lord Huron",
+    "album": "Strange Trails",
+    "duration": 208,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/55/41/4a/55414a18-861a-79d1-e575-5bf8cf205dbe/886445056839_Cover.jpg/600x600bb.jpg",
+    "rawTitle": "The Night We Met"
+  },
+  {
+    "id": "SdKZajZ59uA",
+    "title": "Pluto Projector",
+    "artist": "Rex Orange County",
+    "album": "Pony",
+    "duration": 268,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/e3/af/48/e3af4809-2a90-38c3-c485-44ae6471f75b/886447950241.jpg/600x600bb.jpg",
+    "rawTitle": "Pluto Projector"
+  },
+  {
+    "id": "DdI598gKkKw",
+    "title": "Apocalypse",
+    "artist": "Cigarettes After Sex",
+    "album": "Cigarettes After Sex",
+    "duration": 290,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b3/5e/0f/b35e0fbe-2370-fc48-0f0c-977525e93bf2/720841214601_Cover.jpg/600x600bb.jpg",
+    "rawTitle": "Apocalypse"
+  },
+  {
+    "id": "ssF-hrwAHHc",
+    "title": "Somebody Else",
+    "artist": "Kamen & trvs.",
+    "album": "Somebody Else - Single",
+    "duration": 258,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a5/94/61/a5946155-3ec4-3b57-bea9-57e2b9aae4bf/840507953856_cover.jpg/600x600bb.jpg",
+    "rawTitle": "Somebody Else"
+  },
+  {
+    "id": "f_K_0SNaRk0",
+    "title": "We Are Young (feat. Janelle Monáe)",
+    "artist": "Fun.",
+    "album": "Some Nights",
+    "duration": 251,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Features115/v4/b2/df/a3/b2dfa32c-ea54-7983-0da1-6964e60a1bd7/dj.aqphuayl.jpg/600x600bb.jpg",
+    "rawTitle": "We Are Young (feat. Janelle Monáe)"
+  },
+  {
+    "id": "cmOaXgjJUZI",
+    "title": "What I've Done",
+    "artist": "LINKIN PARK",
+    "album": "Minutes to Midnight (Deluxe Edition)",
+    "duration": 205,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/73/03/56/730356d5-a510-3d3f-d3c6-171f64700d35/093624948971.jpg/600x600bb.jpg",
+    "rawTitle": "What I've Done"
+  },
+  {
+    "id": "9Gb0a8Ie2hM",
+    "title": "Pompeii",
+    "artist": "Bastille",
+    "album": "Bad Blood (Bonus Track Version)",
+    "duration": 214,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e6/d8/61/e6d86177-ae8c-e84e-dfcc-0042687066ed/13UAAIM41955.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Pompeii"
+  },
+  {
+    "id": "PkjaBCLOAec",
+    "title": "Something Just Like This",
+    "artist": "The Chainsmokers & Coldplay",
+    "album": "Memories...Do Not Open",
+    "duration": 247,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/9d/56/6f/9d566f55-5253-bed6-5c31-df952dae649d/886446379289.jpg/600x600bb.jpg",
+    "rawTitle": "Something Just Like This"
+  },
+  {
+    "id": "Dy_eP-mqWow",
+    "title": "Iris",
+    "artist": "The Goo Goo Dolls",
+    "album": "Greatest Hits, Vol. One: The Singles",
+    "duration": 290,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/b4/0c/98/mzi.vhowcacb.jpg/600x600bb.jpg",
+    "rawTitle": "Iris"
+  },
+  {
+    "id": "En_6WWOWh8E",
+    "title": "Riptide",
+    "artist": "Vance Joy",
+    "album": "Dream Your Life Away (Special Edition)",
+    "duration": 202,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/7a/1c/65/7a1c6571-34e9-bb77-32be-90c72ba003c0/075679920355.jpg/600x600bb.jpg",
+    "rawTitle": "Riptide"
+  },
+  {
+    "id": "XUKyV49P8F0",
+    "title": "Time to Pretend",
+    "artist": "MGMT",
+    "album": "Oracular Spectacular",
+    "duration": 263,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e5/06/cc/e506ccd5-56ec-3d4c-69f7-14900bea74f0/mzi.bbgsikee.jpg/600x600bb.jpg",
+    "rawTitle": "Time to Pretend"
+  },
+  {
+    "id": "Kf5pXDhx5Vc",
+    "title": "End of Beginning",
+    "artist": "Djo",
+    "album": "DECIDE",
+    "duration": 159,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e5/94/31/e59431de-7591-58e6-c4d4-105b6373ad6a/5056494917336_1.jpg/600x600bb.jpg",
+    "rawTitle": "End of Beginning"
+  },
+  {
+    "id": "HJstyRBLqBQ",
+    "title": "I Thought I Saw Your Face Today",
+    "artist": "She & Him",
+    "album": "Volume One",
+    "duration": 170,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/64/9c/75/649c75a3-0a3b-3c21-53ea-096036de40a0/56995.jpg/600x600bb.jpg",
+    "rawTitle": "I Thought I Saw Your Face Today"
+  },
+  {
+    "id": "kFJonMzqdig",
+    "title": "Babydoll",
+    "artist": "Dominic Fike",
+    "album": "Don't Forget About Me, Demos - EP",
+    "duration": 98,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2d/37/18/2d3718e9-8620-b603-d3cc-f34ce817070d/886447290170.jpg/600x600bb.jpg",
+    "rawTitle": "Babydoll"
+  },
+  {
+    "id": "HfpR4tAmI7E",
+    "title": "Love Me Not",
+    "artist": "Ravyn Lenae",
+    "album": "Bird's Eye",
+    "duration": 213,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/07/8c/6c/078c6c94-d38d-0451-d57b-23e957b569f8/075679660893.jpg/600x600bb.jpg",
+    "rawTitle": "Love Me Not"
+  },
+  {
+    "id": "pqrUQrAcfo4",
+    "title": "Do I Wanna Know?",
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "duration": 272,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg",
+    "rawTitle": "Do I Wanna Know?"
+  },
+  {
+    "id": "r7Rn4ryE_w8",
+    "title": "Sunflower (Spider-Man: Into the Spider-Verse)",
+    "artist": "Post Malone & Swae Lee",
+    "album": "Spider-Man: Into the Spider-Verse (Soundtrack From & Inspired by the Motion Picture)",
+    "duration": 158,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/4b/30/2c/4b302cb6-7a14-5464-4e97-0577e9d0be49/18UMGIM82277.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Sunflower (Spider-Man: Into the Spider-Verse)"
+  },
+  {
+    "id": "ToO4VFCoR7U",
+    "title": "White Ferrari",
+    "artist": "Frank Ocean",
+    "album": "Blonde",
+    "duration": 249,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg",
+    "rawTitle": "White Ferrari"
+  },
+  {
+    "id": "9cHbvRUALrc",
+    "title": "Pink + White",
+    "artist": "Frank Ocean",
+    "album": "Blonde",
+    "duration": 185,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/bb/45/68/bb4568f3-68cd-619d-fbcb-4e179916545d/BlondCover-Final.jpg/600x600bb.jpg",
+    "rawTitle": "Pink + White"
+  },
+  {
+    "id": "5S6az6odzPI",
+    "title": "Ghost Town (feat. PARTYNEXTDOOR)",
+    "artist": "Kanye West",
+    "album": "ye",
+    "duration": 271,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f8/92/62/f892628e-bfd5-2437-c1f5-0ebbd366de09/00602577303098.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Ghost Town"
+  },
+  {
+    "id": "TL9gcd0WZT8",
+    "title": "Song For Zula",
+    "artist": "Phosphorescent",
+    "album": "Muchacho de Lujo (Deluxe Edition)",
+    "duration": 370,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music6/v4/ec/87/b1/ec87b108-d56f-1011-bfe5-be4d1f1b964c/656605138763.jpg/600x600bb.jpg",
+    "rawTitle": "Song For Zula"
+  },
+  {
+    "id": "ol6uhSEt5aM",
+    "title": "Big Brat",
+    "artist": "Phantom Planet",
+    "album": "Phantom Planet",
+    "duration": 201,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music/f9/6a/b3/mzi.dwnpkdzf.jpg/600x600bb.jpg",
+    "rawTitle": "Big Brat"
+  },
+  {
+    "id": "wS8otCVxpkw",
+    "title": "Hometown",
+    "artist": "twenty one pilots",
+    "album": "Blurryface",
+    "duration": 235,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/600x600bb.jpg",
+    "rawTitle": "Hometown"
+  },
+  {
+    "id": "oZ6PS8hKZBA",
+    "title": "Bon voyage",
+    "artist": "YooA",
+    "album": "Bon Voyage - EP",
+    "duration": 220,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/d2/ef/17/d2ef1789-ccb0-191d-ff9d-283996fe6350/cover_KM0020792_1.jpg/600x600bb.jpg",
+    "rawTitle": "Bon Voyage"
+  },
+  {
+    "id": "6LUon6zLyTM",
+    "title": "My Songs Know What You Did In The Dark (Light Em Up)",
+    "artist": "Fall Out Boy",
+    "album": "Save Rock And Roll",
+    "duration": 187,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/3c/55/ac/3c55acb6-3c72-b7a8-2b86-d8f028da3756/13UMGIM27299.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "My Songs Know What You Did In The Dark (Light Em Up)"
+  },
+  {
+    "id": "BCIa9LEszhk",
+    "title": "Are You Gonna Be My Girl",
+    "artist": "Jet",
+    "album": "Get Born (Deluxe Edition)",
+    "duration": 214,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/b8/ec/96/b8ec96fd-6b42-eb84-b5b8-1a787b72ff57/0603497869336.jpg/600x600bb.jpg",
+    "rawTitle": "Are You Gonna Be My Girl"
+  },
+  {
+    "id": "VHb_XIql_gU",
+    "title": "Kids",
+    "artist": "MGMT",
+    "album": "Oracular Spectacular",
+    "duration": 303,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/72/f3/ed/72f3edba-cbb0-4887-bb89-4aedf97ecd12/888880287779.jpg/600x600bb.jpg",
+    "rawTitle": "Kids"
+  },
+  {
+    "id": "nN66uAbiJJw",
+    "title": "Lonely",
+    "artist": "Noah Cyrus",
+    "album": "THE END OF EVERYTHING",
+    "duration": 144,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music123/v4/67/c5/9f/67c59f61-5676-e282-8f86-f8fcebaaa045/886448371564.jpg/600x600bb.jpg",
+    "rawTitle": "Lonely"
+  },
+  {
+    "id": "f8_EpxhNEsA",
+    "title": "Feels Like We Only Go Backwards",
+    "artist": "Tame Impala",
+    "album": "Lonerism",
+    "duration": 193,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b7/40/9b/b7409bc6-24fa-b956-5613-4be8dc62be06/12UMGIM64219.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Feels Like We Only Go Backwards"
+  },
+  {
+    "id": "-olL71GgdXQ",
+    "title": "Tear in My Heart",
+    "artist": "twenty one pilots",
+    "album": "Blurryface",
+    "duration": 188,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/600x600bb.jpg",
+    "rawTitle": "Tear in My Heart"
+  },
+  {
+    "id": "S0V9zehc_h8",
+    "title": "Where'd All the Time Go?",
+    "artist": "Dr. Dog",
+    "album": "Shame, Shame (Deluxe Edition)",
+    "duration": 235,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/f5/9d/99/f59d994f-c48e-aba4-4347-fe934d46d4fe/0045778705450.png/600x600bb.jpg",
+    "rawTitle": "Where'd All the Time Go?"
+  },
+  {
+    "id": "Oncu0bgdcXU",
+    "title": "Fix You",
+    "artist": "Coldplay",
+    "album": "X&Y",
+    "duration": 295,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/0c/82/48/0c8248a8-4a5b-d30d-8056-f32d650d2fc9/190295978068.jpg/600x600bb.jpg",
+    "rawTitle": "Fix You"
+  },
+  {
+    "id": "4MXruqqZb8Q",
+    "title": "Japanese Denim",
+    "artist": "Andrew Foy",
+    "album": "Japanese Denim - Single",
+    "duration": 237,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/eb/66/fb/eb66fbb4-cd6c-72f1-3602-681c5b0bf790/cover.jpg/600x600bb.jpg",
+    "rawTitle": "Japanese Denim"
+  },
+  {
+    "id": "O_d3DXVb430",
+    "title": "Memories",
+    "artist": "Maroon 5",
+    "album": "Memories - Single",
+    "duration": 189,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/22/58/58/225858c4-ef47-2b91-723a-47af3e99699a/19UMGIM64502.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Memories (feat. Kid Cudi)"
+  },
+  {
+    "id": "YTCS7IWUJu8",
+    "title": "Way Down We Go",
+    "artist": "KALEO",
+    "album": "A / B",
+    "duration": 220,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/74/fb/5e/74fb5e22-3a1b-4468-dc14-e097dc635e44/075679911506.jpg/600x600bb.jpg",
+    "rawTitle": "Way down We Go"
+  },
+  {
+    "id": "yfd_d0m46q0",
+    "title": "She Will Be Loved",
+    "artist": "Maroon 5",
+    "album": "Songs About Jane",
+    "duration": 258,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/d0/3e/25/d03e255d-e205-0e66-20f6-01e251896c25/14UMGIM27076.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "She Will Be Loved (Radio Mix)"
+  },
+  {
+    "id": "1aokooixKIo",
+    "title": "Sparks",
+    "artist": "Coldplay",
+    "album": "Parachutes",
+    "duration": 227,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg",
+    "rawTitle": "Sparks"
+  },
+  {
+    "id": "ikFFVfObwss",
+    "title": "Highway to Hell",
+    "artist": "AC/DC",
+    "album": "Single",
+    "duration": 209,
+    "cover": "https://i.ytimg.com/vi/ikFFVfObwss/hqdefault.jpg",
+    "rawTitle": "Highway to Hell"
+  },
+  {
+    "id": "w1Smzzw_w7Q",
+    "title": "Ride",
+    "artist": "twenty one pilots",
+    "album": "Blurryface",
+    "duration": 215,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/8e/e2/89/8ee28904-0821-610d-5011-a61845f62756/075679926951.jpg/600x600bb.jpg",
+    "rawTitle": "Ride"
+  },
+  {
+    "id": "u-IcadiJCrE",
+    "title": "Numb",
+    "artist": "LINKIN PARK",
+    "album": "Meteora (Deluxe Edition)",
+    "duration": 188,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/13/44/05/134405bd-9e27-a678-8953-b5f724201f95/093624948988.jpg/600x600bb.jpg",
+    "rawTitle": "Numb"
+  },
+  {
+    "id": "qJF0doztm4c",
+    "title": "Ophelia",
+    "artist": "The Lumineers",
+    "album": "Single",
+    "duration": 161,
+    "cover": "https://i.ytimg.com/vi/qJF0doztm4c/hqdefault.jpg",
+    "rawTitle": "Ophelia"
+  },
+  {
+    "id": "PvM79DJ2PmM",
+    "title": "The Less I Know The Better",
+    "artist": "Mau P",
+    "album": "The Less I Know The Better - Single",
+    "duration": 176,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a0/9a/2c/a09a2ca3-a5a6-814b-0af7-640dc0aef0aa/091012682261.jpg/600x600bb.jpg",
+    "rawTitle": "The Less I Know The Better"
+  },
+  {
+    "id": "9qnqYL0eNNI",
+    "title": "Yellow",
+    "artist": "Coldplay",
+    "album": "Parachutes",
+    "duration": 269,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/f5/93/8c/f5938c49-964c-31d1-4b33-78b634f71fb7/190295978075.jpg/600x600bb.jpg",
+    "rawTitle": "Yellow"
+  },
+  {
+    "id": "rnO-MflYxCw",
+    "title": "Pumped Up Kicks",
+    "artist": "Foster the People",
+    "album": "Torches",
+    "duration": 240,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/ba/07/5b/ba075b3c-f0c4-b519-59f3-7ae74d43246b/dj.lajxsvkg.jpg/600x600bb.jpg",
+    "rawTitle": "Pumped Up Kicks"
+  },
+  {
+    "id": "xOazTYPrt64",
+    "title": "Somebody That I Used to Know (feat. Kimbra)",
+    "artist": "Gotye",
+    "album": "Making Mirrors",
+    "duration": 245,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b3/8a/98/b38a9867-2a9c-de2f-2d80-c624fb2200ec/11UMGIM19347.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Somebody That I Used To Know"
+  },
+  {
+    "id": "NxxjLD2pmlk",
+    "title": "Feel Good Inc. (feat. David Jolicoeur, Kelvin Mercer & Vincent Mason)",
+    "artist": "Gorillaz & De La Soul",
+    "album": "Demon Days",
+    "duration": 221,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/1c/0f/81/1c0f818a-e458-dd84-6f1b-ccbdf5fe14d6/825646291045.jpg/600x600bb.jpg",
+    "rawTitle": "Feel Good Inc."
+  },
+  {
+    "id": "4aNzDIKetB4",
+    "title": "Unconsolable",
+    "artist": "X Ambassadors",
+    "album": "Love Songs Drug Songs - EP",
+    "duration": 217,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music118/v4/0b/0a/3b/0b0a3b3a-fdec-8906-2375-322ea4a23033/00602537391691.rgb.jpg/600x600bb.jpg",
+    "rawTitle": "Unconsolable"
+  },
+  {
+    "id": "Ao1M3nwncA0",
+    "title": "erase me (feat. Jacob Collier)",
+    "artist": "Lizzy McAlpine",
+    "album": "five seconds flat",
+    "duration": 214,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/11/6a/64/116a64ee-0db3-4e59-bd86-f44008e47f85/5056167170006.jpg/600x600bb.jpg",
+    "rawTitle": "erase me"
+  },
+  {
+    "id": "lyO-Sveg6a8",
+    "title": "Knee Socks",
+    "artist": "Arctic Monkeys",
+    "album": "AM",
+    "duration": 258,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/69/9c/b5/699cb5d6-115c-ff73-9d26-e57ea4350d72/887828031795.png/600x600bb.jpg",
+    "rawTitle": "Knee Socks"
+  },
+  {
+    "id": "GGsuLVlLObc",
+    "title": "Shut Up and Dance",
+    "artist": "WALK THE MOON",
+    "album": "TALKING IS HARD (Expanded Edition)",
+    "duration": 199,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/bf/b6/76/bfb67621-b78d-3924-6d29-4f367697a674/886445045758.jpg/600x600bb.jpg",
+    "rawTitle": "Shut Up and Dance"
+  },
+  {
+    "id": "aNM3ZUcRQLI",
+    "title": "Formula (From \"Euphoria: Season 1\" Soundtrack)",
+    "artist": "Labrinth",
+    "album": "Euphoria (Original Score from the HBO Series)",
+    "duration": 92,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/6f/f4/05/6ff40578-72c8-e9ed-5413-96dc4874cc86/886447932223.jpg/600x600bb.jpg",
+    "rawTitle": "Formula (From \"Euphoria: Season 1\" Soundtrack)"
+  },
+  {
+    "id": "sCAiqvtCYiY",
+    "title": "Trojans",
+    "artist": "Atlas Genius",
+    "album": "When It Was Now (Deluxe Version)",
+    "duration": 219,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/8a/98/e4/8a98e476-4455-a587-b8b1-8d37d3df677f/093624947400.jpg/600x600bb.jpg",
+    "rawTitle": "Trojans"
+  },
+  {
+    "id": "a24EUd0zeqI",
+    "title": "Shut up My Moms Calling",
+    "artist": "Hotel Ugly",
+    "album": "Shut up My Moms Calling - Single",
+    "duration": 165,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/63/11/1b/63111b50-00ce-2734-e09f-94fb791c9dee/0d6bb465-1f3e-457c-99e5-a786f63c3fbb.jpg/600x600bb.jpg",
+    "rawTitle": "Shut up My Moms Calling"
+  },
+  {
+    "id": "HBBBWBOAf6c",
+    "title": "Miracle Man",
+    "artist": "Ozzy Osbourne",
+    "album": "No Rest for the Wicked (Bonus Track Version)",
+    "duration": 224,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/1e/ca/9e/1eca9e72-1d13-1590-355c-e1d87be4fb9f/696998542624.jpg/600x600bb.jpg",
+    "rawTitle": "Miracle Man"
+  },
+  {
+    "id": "khnokW3Mw24",
+    "title": "Instant Crush",
+    "artist": "Daft Punk & Julian Casablancas",
+    "album": "Random Access Memories",
+    "duration": 338,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e8/43/5f/e8435ffa-b6b9-b171-40ab-4ff3959ab661/886443919266.jpg/600x600bb.jpg",
+    "rawTitle": "Instant Crush (feat. Julian Casablancas)"
+  },
+  {
+    "id": "Qnx-FqKqI9o",
+    "title": "What You Know",
+    "artist": "Two Door Cinema Club",
+    "album": "Tourist History",
+    "duration": 191,
+    "cover": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/e6/7f/61/e67f61ff-6231-1613-a2a9-aa7f7439457c/00892038002275_Cover.jpg/600x600bb.jpg",
+    "rawTitle": "What You Know"
+  }
+]
