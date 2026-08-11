@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Peter's iPod — Spider-Man Playlist</title>
+    <title>SpideyPod</title>
     <meta
       name="description"
       content="Nostalgic early 2000s indie, punk, and alt-rock bangers from Peter Parker's iPod playlist. Plug in and swing through Queens."
@@ -24,11 +24,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles.css?v=31" />
+    <link rel="stylesheet" href="styles.css?v=42" />
   </head>
 
   <body>
@@ -37,7 +37,8 @@
 
     <!-- Ambient background with cross-fading layers -->
     <div class="bg" aria-hidden="true">
-      <div class="bg__layer bg__layer--1"></div>
+      <div class="bg__layer" id="bg-1" style="opacity: 1; transition: opacity 0.5s ease;"></div>
+      <div class="bg__layer" id="bg-2" style="opacity: 0; transition: opacity 0.5s ease;"></div>
       <div class="bg__scrim"></div>
     </div>
 
@@ -66,21 +67,31 @@
           aria-label="Open playlist on Spotify"
           title="Open playlist on Spotify"
         >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <svg class="link__icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
             <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.485 17.301c-.217.355-.68.472-1.035.256-2.868-1.752-6.478-2.149-10.73-1.176-.406.094-.814-.162-.907-.568-.094-.406.162-.814.568-.907 4.647-1.062 8.624-.613 11.848 1.356.355.217.472.68.256 1.039zm1.464-3.262c-.274.444-.858.588-1.302.314-3.284-2.019-8.293-2.607-12.177-1.428-.499.151-1.025-.132-1.176-.631-.151-.499.132-1.025.631-1.176 4.437-1.347 9.948-.696 13.71 1.621.444.274.588.858.314 1.302zm.126-3.41c-3.937-2.338-10.439-2.554-14.218-1.406-.604.183-1.246-.157-1.429-.762-.183-.604.157-1.246.762-1.429 4.339-1.317 11.517-1.059 16.012 1.611.543.322.721 1.025.399 1.568-.322.543-1.025.721-1.568.399z"/>
+          </svg>
+          <span class="link__text">Spotify</span>
+          <svg class="link__arrow" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
         </a>
         <a
           class="link"
           id="link-ytm"
-          href="https://music.youtube.com/playlist?list=PLvYr5oSUk8FZ0cMjF98d0wzxkPwocmAPV"
+          href="https://music.youtube.com/playlist?list=PLX4JLw4_mIKc&si=LSzvbUx4F7VMATMk"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Open playlist on YouTube Music"
           title="Open playlist on YouTube Music"
         >
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+          <svg class="link__icon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
             <path d="M12 0C5.376 0 0 5.376 0 12s5.376 12 12 12 12-5.376 12-12S18.624 0 12 0zm0 19.104c-3.924 0-7.104-3.18-7.104-7.104S8.076 4.896 12 4.896s7.104 3.18 7.104 7.104-3.18 7.104-7.104 7.104zm0-13.332c-3.432 0-6.228 2.796-6.228 6.228S8.568 18.228 12 18.228s6.228-2.796 6.228-6.228S15.432 5.772 12 5.772zM9.684 15.54V8.46L15.816 12l-6.132 3.54z"/>
+          </svg>
+          <span class="link__text">YT Music</span>
+          <svg class="link__arrow" viewBox="0 0 24 24" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="7" y1="17" x2="17" y2="7"></line>
+            <polyline points="7 7 17 7 17 17"></polyline>
           </svg>
         </a>
       </nav>
@@ -120,7 +131,7 @@
     <main>
       <!-- Stylized Tape Label Title -->
       <h1 class="logo">
-        <span class="logo__label">Peter's iPod</span>
+        <img class="logo__img" src="assets/title/title-1.png" alt="SpideyPod">
       </h1>
 
       <!-- Player Dock -->
@@ -217,7 +228,7 @@
       </p>
     </noscript>
 
-    <script src="app.js?v=26"></script>
+    <script src="app.js?v=28"></script>
 
     <!-- Debug Console Overlay -->
     <div id="debug-console-container" style="display: none; position: fixed; bottom: 80px; left: var(--edge); right: var(--edge); background: rgba(15, 15, 20, 0.95); border: 1px solid var(--glass-line); border-radius: 12px; padding: 16px; font-family: monospace; font-size: 0.8rem; z-index: 10000; box-shadow: 0 10px 30px rgba(0,0,0,0.8); max-height: 200px; overflow-y: auto;">

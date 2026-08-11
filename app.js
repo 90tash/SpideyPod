@@ -652,6 +652,7 @@ const state = {
   playing: false,
   started: false,
   scrubbing: false,
+  lastRenderedTrackId: null,
 };
 
 let yt = null;
@@ -680,6 +681,54 @@ const currentTrack = () => state.tracks[state.order[state.pos]];
 
 /* ── Rendering ───────────────────────────────────────────────── */
 
+const BACKGROUNDS = [
+  "assets/bg/bg-1.jpg",
+  "assets/bg/bg-2.jpg",
+  "assets/bg/bg-3.png",
+  "assets/bg/bg-4.jpg",
+  "assets/bg/bg-5.jpg",
+  "assets/bg/bg-6.jpg",
+  "assets/bg/bg-7.jpg",
+  "assets/bg/bg-8.png",
+  "assets/bg/bg-9.jpg",
+  "assets/bg/bg-10.jpg",
+  "assets/bg/bg-11.jpg",
+  "assets/bg/bg-12.jpg",
+  "assets/bg/bg-13.jpg",
+  "assets/bg/bg-14.jpg",
+  "assets/bg/bg-15.jpeg",
+  "assets/bg/bg-16.jpg",
+  "assets/bg/bg-17.jpg"
+];
+
+function changeBackgroundRandomly() {
+  const currentBg = state.currentBgUrl || "assets/bg/bg-1.jpg";
+  let available = BACKGROUNDS.filter(bg => bg !== currentBg);
+  if (available.length === 0) available = BACKGROUNDS;
+  const newBg = available[Math.floor(Math.random() * available.length)];
+
+  // Preload the high-resolution image first
+  const img = new Image();
+  img.src = newBg;
+  img.onload = () => {
+    state.currentBgUrl = newBg;
+
+    const bg1 = document.getElementById('bg-1');
+    const bg2 = document.getElementById('bg-2');
+    if (!bg1 || !bg2) return;
+
+    if (bg1.style.opacity === '1') {
+      bg2.style.backgroundImage = `url('${newBg}')`;
+      bg2.style.opacity = '1';
+      bg1.style.opacity = '0';
+    } else {
+      bg1.style.backgroundImage = `url('${newBg}')`;
+      bg1.style.opacity = '1';
+      bg2.style.opacity = '0';
+    }
+  };
+}
+
 let swapTimer = null;
 
 function renderTrack() {
@@ -698,7 +747,14 @@ function renderTrack() {
   el.cover.src = t.cover || '';
   el.cover.alt = `${t.title} artwork`;
 
-  if (state.started) document.title = `${t.title} — Peter's iPod`;
+  if (state.started) {
+    document.title = `${t.title} - SpideyPod`;
+    if (state.lastRenderedTrackId !== t.id) {
+      changeBackgroundRandomly();
+      nextBumper();
+    }
+  }
+  state.lastRenderedTrackId = t.id;
 
   [...el.listItems.children].forEach((li, i) =>
     li.classList.toggle('is-current', i === state.pos),
@@ -756,6 +812,7 @@ function go(newPos, autoplay = true) {
   if (!yt) return;
   if (autoplay) {
     state.started = true;
+    renderPlaying(false);
     yt.loadVideoById(currentTrack().id);
   } else {
     yt.cueVideoById(currentTrack().id);
@@ -1069,7 +1126,7 @@ el.webBtn.addEventListener('click', thwip);
 
 /* ── Quotes Rotation ────────────────────────────────────────── */
 
-const BUMPER_QUOTES = [
+let BUMPER_QUOTES = [
   "With great power comes great responsibility...",
   "Spider-Man? Yeah, I take his pictures.",
   "Go web go! Fly! Up, up, and away web!",
@@ -1086,6 +1143,28 @@ const BUMPER_QUOTES = [
 let bumperOrder = [];
 let bumperPos = 0;
 let bumperTimer = null;
+const BUMPER_DELAY = 25000; // Increased rotation delay to 25 seconds
+
+async function loadQuotes() {
+  try {
+    const res = await fetch('quote.txt');
+    if (res.ok) {
+      const text = await res.text();
+      const parsed = text
+        .split('\n')
+        .map(l => l.trim())
+        .filter(l => l.length > 0);
+      if (parsed.length > 0) {
+        BUMPER_QUOTES = parsed;
+        bumperOrder = shuffle(BUMPER_QUOTES.map((_, i) => i));
+        bumperPos = 0;
+        el.bumperText.textContent = BUMPER_QUOTES[bumperOrder[0]];
+      }
+    }
+  } catch (err) {
+    console.warn("Could not load quote.txt, using fallback lists:", err);
+  }
+}
 
 function nextBumper() {
   bumperPos += 1;
@@ -1102,16 +1181,19 @@ function nextBumper() {
   setTimeout(() => {
     el.bumperText.textContent = BUMPER_QUOTES[bumperOrder[bumperPos]];
     el.bumperText.classList.remove('is-swapping');
-  }, 250);
+  }, 420);
 
   clearInterval(bumperTimer);
-  bumperTimer = setInterval(nextBumper, 10000);
+  bumperTimer = setInterval(nextBumper, BUMPER_DELAY);
 }
 
 bumperOrder = shuffle(BUMPER_QUOTES.map((_, i) => i));
 el.bumperText.textContent = BUMPER_QUOTES[bumperOrder[0]];
-bumperTimer = setInterval(nextBumper, 10000);
+bumperTimer = setInterval(nextBumper, BUMPER_DELAY);
 el.bumperNext.addEventListener('click', nextBumper);
+
+// Load quotes from text file on startup
+loadQuotes();
 
 /* ── Clock & Mock Online Counter ────────────────────────────── */
 
@@ -1131,7 +1213,12 @@ setInterval(tickClock, 15000);
     const mockCount = Math.floor(Math.random() * (150 - 40 + 1)) + 40;
     const countStr = String(mockCount);
     el.listeners.textContent = countStr;
-    document.title = `SpideyPod (${countStr} swinging in Queens)`;
+    if (!state.started) {
+      document.title = `SpideyPod (${countStr} swinging in Queens)`;
+    } else {
+      const t = currentTrack();
+      if (t) document.title = `${t.title} - SpideyPod`;
+    }
   }
   updateCount();
   setInterval(updateCount, 15000);
@@ -1147,16 +1234,27 @@ function preferAudio() {
   }
 }
 
+function hasReallyEnded() {
+  try {
+    const duration = yt?.getDuration?.() || 0;
+    const currentTime = yt?.getCurrentTime?.() || 0;
+    return duration > 5 && currentTime >= duration - 1.5;
+  } catch {
+    return false;
+  }
+}
+
 window.onYouTubeIframeAPIReady = () => {
   yt = new YT.Player('yt-player', {
-    height: '1',
-    width: '1',
+    height: '180',
+    width: '320',
     videoId: currentTrack().id,
     playerVars: {
       playsinline: 1,
       controls: 0,
       disablekb: 1,
       modestbranding: 1,
+      origin: window.location.origin,
       rel: 0,
     },
     events: {
@@ -1174,20 +1272,23 @@ window.onYouTubeIframeAPIReady = () => {
         } else if (e.data === S.PAUSED || e.data === S.BUFFERING) {
           renderPlaying(e.data === S.BUFFERING && state.playing);
         } else if (e.data === S.ENDED) {
-          go(state.pos + 1);
+          if (hasReallyEnded()) go(state.pos + 1);
         }
       },
       onError: (err) => {
         console.warn(`YouTube Player error ${err.data} on track ${state.pos}.`);
         if (state.started) {
           state.consecutiveErrors = (state.consecutiveErrors || 0) + 1;
-          if (state.consecutiveErrors > 3) {
-            console.error("Too many consecutive playback errors. Stopping playback.");
+          
+          if (state.consecutiveErrors < 3) {
+            console.warn(`Error ${err.data} on track. Auto-skipping to next song...`);
+            if (el.artist) el.artist.textContent = `Skipping restricted track...`;
+            setTimeout(() => go(state.pos + 1), 1500);
+          } else {
+            console.error("Too many consecutive playback errors. Stopping.");
             state.playing = false;
             renderPlaying(false);
-            if (el.title) el.title.textContent = "Playback Error (Open localhost:3000)";
-          } else {
-            go(state.pos + 1, true);
+            if (el.artist) el.artist.textContent = `YouTube playback error ${err.data}`;
           }
         } else {
           console.warn("Initial track failed to load. Standby.");
@@ -1220,6 +1321,14 @@ window.onYouTubeIframeAPIReady = () => {
   state.order = buildOrder();
   renderList();
   renderTrack();
+
+  // Set a random background immediately on startup
+  const initialBg = BACKGROUNDS[Math.floor(Math.random() * BACKGROUNDS.length)];
+  state.currentBgUrl = initialBg;
+  const bg1 = document.getElementById('bg-1');
+  if (bg1) {
+    bg1.style.backgroundImage = `url('${initialBg}')`;
+  }
 
   const s = document.createElement('script');
   s.src = 'https://www.youtube.com/iframe_api';
