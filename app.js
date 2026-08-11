@@ -701,18 +701,27 @@ const BACKGROUNDS = [
   "assets/bg/bg-17.jpg"
 ];
 
+// Preload cache: quietly download all backgrounds after page load
+const bgCache = new Set();
+function preloadAllBackgrounds() {
+  BACKGROUNDS.forEach((src, i) => {
+    setTimeout(() => {
+      const img = new Image();
+      img.src = src;
+      img.onload = () => bgCache.add(src);
+    }, i * 300); // stagger loads to avoid bandwidth spike
+  });
+}
+window.addEventListener('load', preloadAllBackgrounds);
+
 function changeBackgroundRandomly() {
   const currentBg = state.currentBgUrl || "assets/bg/bg-1.jpg";
   let available = BACKGROUNDS.filter(bg => bg !== currentBg);
   if (available.length === 0) available = BACKGROUNDS;
   const newBg = available[Math.floor(Math.random() * available.length)];
 
-  // Preload the high-resolution image first
-  const img = new Image();
-  img.src = newBg;
-  img.onload = () => {
+  function applyBg() {
     state.currentBgUrl = newBg;
-
     const bg1 = document.getElementById('bg-1');
     const bg2 = document.getElementById('bg-2');
     if (!bg1 || !bg2) return;
@@ -726,7 +735,24 @@ function changeBackgroundRandomly() {
       bg1.style.opacity = '1';
       bg2.style.opacity = '0';
     }
-  };
+  }
+
+  // If already cached, apply immediately
+  if (bgCache.has(newBg)) {
+    applyBg();
+  } else {
+    // Not cached yet — load with a 600ms timeout fallback
+    let applied = false;
+    const img = new Image();
+    img.src = newBg;
+    img.onload = () => {
+      bgCache.add(newBg);
+      if (!applied) { applied = true; applyBg(); }
+    };
+    setTimeout(() => {
+      if (!applied) { applied = true; applyBg(); }
+    }, 600);
+  }
 }
 
 let swapTimer = null;
